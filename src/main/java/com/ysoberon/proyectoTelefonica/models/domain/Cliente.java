@@ -22,6 +22,7 @@ public class Cliente {
 	private String nombre;
 	private String apellido;
 	private String email;
+	private String edad;
 	
 	@Column(name="create_at")
 	@Temporal(TemporalType.DATE)
@@ -72,6 +73,14 @@ public class Cliente {
 
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
+	}
+
+	public String getEdad() {
+		return edad;
+	}
+
+	public void setEdad(String edad) {
+		this.edad = edad;
 	}
 
 	
